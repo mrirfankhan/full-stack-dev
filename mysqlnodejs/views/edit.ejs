@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
+<body>
+    <h2>Edit your data. Welcome, user! Your email is <%= alldata.email %></h2>
+
+    <!-- Ensure method-override middleware is enabled in Express -->
+    <form action="/users/<%= alldata.id %>?_method=PATCH" method="post">
+        <label for="newusername">New Username:</label>
+        <textarea name="newusername"><%= alldata.username %></textarea>
+        <label for="password">Enter Password:</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
