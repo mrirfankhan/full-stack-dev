@@ -1,0 +1,1 @@
+views folder all ejs html files is here
