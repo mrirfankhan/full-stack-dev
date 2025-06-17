@@ -1,0 +1,10 @@
+.searchBox {
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
